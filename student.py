@@ -88,11 +88,6 @@ print(subject)
 print(type(subject))
 
 
-# it will print the type or blueprint of dog1 work and print and print out dog1 and dog2
-
-
-# the reason i'm not doing the other ones is that i have already apply those concept to the tasks I have done before
-
 class Car:
     pass
 
