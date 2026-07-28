@@ -1,0 +1,54 @@
+You're designing a Hospital Management System.
+
+Without writing methods, identify:
+
+5 classes
+At least 4 attributes for each class
+
+Think like a backend engineer designing the database and application model.
+
+
+Solution:
+
+Patient:
+    name
+    id
+    age
+    gender
+Nurse:
+    name
+    id
+    shift
+    time_in
+    time_out
+Medication:
+    phamacist
+    drugs
+Reception:
+    patient_data
+    Document
+    attendance
+    receipt
+Doctor:
+    name:
+    id
+    shift
+    appointment
+
+
+Answer these before moving on:
+
+What is an attribute?
+Why do objects need attributes?
+Can two objects from the same class have different attribute values?
+What does the . (dot) operator do?
+What happens if you change student1.age? Does it affect student2.age? Why?
+
+
+Answer:
+
+1. Attribute is the characteristics of an object
+2. Objects need attributes to store information about themselves.
+3. yes
+4. it is use to connect attribute and method to the objects it belongs to
+5. it does not affect it, cause Every object stores its own attributes. They are independent.
