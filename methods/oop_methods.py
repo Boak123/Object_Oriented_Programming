@@ -1,0 +1,1 @@
+# A method is a function that belongs to a class and defines what an object can do.
