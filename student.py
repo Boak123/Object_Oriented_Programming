@@ -100,3 +100,4 @@ for i in range(3):
 
 print(garage)
 print(type(car1))
+

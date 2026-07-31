@@ -52,3 +52,58 @@ Answer:
 3. yes
 4. it is use to connect attribute and method to the objects it belongs to
 5. it does not affect it, cause Every object stores its own attributes. They are independent.
+
+
+
+You're designing a University Management System.
+
+Choose five classes.
+
+For each class:
+
+4 attributes
+4 methods
+
+Think like you're planning a real backend application.
+
+**Answer**
+
+Student:
+    id
+    name
+    course
+    department
+
+    study
+    write_note
+    write_exam
+    eat
+    sleep
+
+Lecture:
+    name
+    id
+    teach
+    class
+    course
+
+    have_class
+    teach_student
+    mark_assignment
+    set_exam
+
+Answer these in your own words:
+
+What is a method?
+What is the difference between a function and a method?
+What does self represent?
+Why doesn't student1.study() require us to pass self manually?
+What happens if you remove self from an instance method?
+
+Answer:
+
+A method are the actions the object do
+a function is indipendently & A method belong to a class
+self is a parameter that that automatically call the object that called the method
+so it can call the method study() automatically
+it cause an error
