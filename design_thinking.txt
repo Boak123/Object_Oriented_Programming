@@ -35,6 +35,7 @@ Doctor:
     shift
     appointment
 
+###############################################
 
 Answer these before moving on:
 
@@ -53,7 +54,7 @@ Answer:
 4. it is use to connect attribute and method to the objects it belongs to
 5. it does not affect it, cause Every object stores its own attributes. They are independent.
 
-
+######################################################################
 
 You're designing a University Management System.
 
@@ -107,3 +108,78 @@ a function is indipendently & A method belong to a class
 self is a parameter that that automatically call the object that called the method
 so it can call the method study() automatically
 it cause an error
+
+################################################################################
+
+🧠 Design challenge
+
+Before coding, design these classes:
+
+Person
+
+Choose 3 common attributes and 3 common methods.
+
+Student
+
+Choose 3 student-specific attributes and 3 student-specific methods.
+
+UndergraduateStudent
+
+Choose 2 undergraduate-specific attributes and 2 undergraduate-specific methods.
+
+Lecturer
+
+Choose 3 lecturer-specific attributes and 3 lecturer-specific methods.
+
+Administrator
+
+Choose 3 administrator-specific attributes and 3 administrator-specific methods.
+
+Don't write the Python yet. Think like a backend engineer and design the model first.
+
+Solution:
+
+Person:
+    name
+    id
+    address
+    Methods:
+
+        eat()
+        sleep()
+        bath()
+Student(Person):
+    studentID
+    course
+    Timetable
+
+    Methods:
+        take_exam()
+        study()
+        attend_class()
+
+Undergraduate(Student):
+    matric_number
+    relationship
+
+    Methods:
+        register_course()
+        take_notes()
+
+Lecturers(Person):
+    staffID
+    courses_teaching
+
+    Methods:
+        mark_script()
+        teach()
+        set_exam()
+
+Administrator(Person)
+    id
+    emergencyData
+
+    Methods:
+        register_student()
+        assigne_matric_number()
+        process_school_fees()
