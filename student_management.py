@@ -1,4 +1,12 @@
-class Student:
+class Person:
+
+    def eat(self):
+        print("I want to eat.")
+
+    def sleep(self):
+        print("I want to sleep.")
+
+class Student(Person):
 
     def study(self):
         print("I am Studying")
@@ -9,10 +17,15 @@ class Student:
     def register(self):
         print("I have registered my courses.")
 
-    def sleep(self):
-        print("I want to sleep")
-    def eat(self):
-        print("I want to eat")
+class Lecturer(Person):
+
+    def teach(self):
+        print("I am teaching.")
+
+class Administrator(Person):
+
+    def admit_student(self):
+        print("Student admitted.")
 
 student1 = Student()
 student1.study()
