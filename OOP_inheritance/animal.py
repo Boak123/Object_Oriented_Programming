@@ -1,14 +1,3 @@
-"""Animal should have:
-
-name
-eat()
-sleep()
-
-Dog should have:
-
-bark()
-
-Create a Dog object and make it use all three inherited/own behaviors."""
 class Animal:
     def __init__(self, name):
         self.name = name
