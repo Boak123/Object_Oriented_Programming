@@ -30,23 +30,41 @@
 
 class Person:
 
-    def __init__(self, name):
+    def __init__(self, name, university):
         self.name = name
+        self.university = university
 
     def introduce(self):
         print(f"I am {self.name}")
 
+    def describe(self):
+        print(f"I am in {self.university}")
+
+# Multilevel Overiding
+
 class Student(Person):
-    def __init__(self, name, student_id):
-        super().__init__(name) # Overide + Super()
+    def __init__(self, name, university, course, undergraduate, student_id):
+        super().__init__(name, university) # Overide + Super()
         self.student_id = student_id
+        self.course = course
+        self.undergraduate = undergraduate
+
+    def describe(self):
+        print(f"I am studying {self.course}")
 
     def introduce(self):
         print(f"I am {self.name} and student ID of {self.student_id}")
 
-persongg = Person("BOLU")
+class UnderGraduateStudent(Student):
+    def describe(self):
+        print(f"I am in {self.undergraduate}")
+        print
+
+persongg = Person("BOLU", "Kwwasu")
 persongg.introduce()
-studentrr = Student("Bolu", 1234)
+studentrr = Student("Bolu", "Kwasu", "Cyber Security", "100", 1234)
 studentrr.introduce()
+studentrr.describe()
+undergraduate1 = UnderGraduateStudent("Victor", "Kwasu", "Cyber Security", "200", 1234)
 
 
