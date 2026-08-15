@@ -38,7 +38,7 @@ class Person:
 
 class Student(Person):
     def __init__(self, name, student_id):
-        self.name = name
+        super().__init__(name) # Overide + Super()
         self.student_id = student_id
 
     def introduce(self):
@@ -48,4 +48,5 @@ persongg = Person("BOLU")
 persongg.introduce()
 studentrr = Student("Bolu", 1234)
 studentrr.introduce()
+
 
