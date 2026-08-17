@@ -40,7 +40,7 @@ class Person:
     def describe(self):
         print(f"I am in {self.university}")
 
-# Multilevel Overiding
+# Three-Level Override
 
 class Student(Person):
     def __init__(self, name, university, course, undergraduate, student_id):
