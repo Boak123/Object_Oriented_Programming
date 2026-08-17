@@ -38,3 +38,35 @@ Receives payment and prints:
 
 Tola received ₦200000 as administrator salary."""
 
+class Person:
+    def __init__(self, name, account_number, amount):
+        self.name = name
+        self.account_number = account_number
+        self.amount = amount
+
+    def receive_payment(self, amount):
+        self.amount = amount
+        print(f"{self.name} received ₦{self.amount} as student allowance.")
+   
+class Student(Person):
+    def receive_payment(self):
+        print(f"{self.name} received ₦{self.amount} as student allowance.")
+   
+class Lecturer(Person):
+    def receive_payment(self):
+        print(f"{self.name} received ₦{self.amount} as Lecturer salary")
+
+class Administrator(Person):
+    def receive_payment(self):
+        print(f"{self.name} received ₦{self.amount} as administrator salary")
+
+student1 = Student("Victor", 23456789, 10000)
+lecturer1 = Lecturer("Mr Jones", 678903566, 20000)
+administrator1 = Administrator("Mr Jack", 567891234, 25000)
+
+people = [student1, lecturer1, administrator1]
+
+for person in people:
+    person.receive_payment()
+
+
