@@ -1,4 +1,4 @@
-## University Result System
+### University Result System
 
 class Person:
     def __init__(self, name):
